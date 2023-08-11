@@ -1,0 +1,13 @@
+  let api_key = "53c12f8854a1b54715b9bbc33df65e3e";
+  const movieData = await fetch(`https://api.themoviedb.org/3/movie/popular?api_key=${api_key}`)
+  const resultData = await movieData.json();
+
+  const ImagePath = "https://image.tmdb.org/t/p/original"
+
+   images: {
+        domains: ["image.tmdb.org"],
+    }
+
+
+    const searchData = await fetch(`https://api.themoviedb.org/3/search/movie?query=${searchInput}&api_key=${apiKey}`);
+    const resultsData = await searchData.json();
